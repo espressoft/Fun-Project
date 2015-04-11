@@ -14,6 +14,7 @@
 		F5A44FB31AD8D4230037AC67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A44FB21AD8D4230037AC67 /* Images.xcassets */; };
 		F5A44FB61AD8D4230037AC67 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5A44FB41AD8D4230037AC67 /* LaunchScreen.xib */; };
 		F5A44FC21AD8D4230037AC67 /* FunProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A44FC11AD8D4230037AC67 /* FunProjectTests.m */; };
+		F5A44FD61AD8D5180037AC67 /* libFunLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A44FD11AD8D4FA0037AC67 /* libFunLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = F5A44FA11AD8D4230037AC67;
 			remoteInfo = FunProject;
+		};
+		F5A44FD01AD8D4FA0037AC67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5A44FCB1AD8D4FA0037AC67 /* FunLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5A44F7F1AD8D3A50037AC67;
+			remoteInfo = FunLibrary;
+		};
+		F5A44FD21AD8D4FA0037AC67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5A44FCB1AD8D4FA0037AC67 /* FunLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5A44F8A1AD8D3A50037AC67;
+			remoteInfo = FunLibraryTests;
+		};
+		F5A44FD41AD8D50F0037AC67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5A44FCB1AD8D4FA0037AC67 /* FunLibrary.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F5A44F7E1AD8D3A50037AC67;
+			remoteInfo = FunLibrary;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +62,7 @@
 		F5A44FBB1AD8D4230037AC67 /* FunProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A44FC01AD8D4230037AC67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5A44FC11AD8D4230037AC67 /* FunProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunProjectTests.m; sourceTree = "<group>"; };
+		F5A44FCB1AD8D4FA0037AC67 /* FunLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FunLibrary.xcodeproj; path = "Fun-Library/FunLibrary.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A44FD61AD8D5180037AC67 /* libFunLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +87,7 @@
 		F5A44F991AD8D4230037AC67 = {
 			isa = PBXGroup;
 			children = (
+				F5A44FCB1AD8D4FA0037AC67 /* FunLibrary.xcodeproj */,
 				F5A44FA41AD8D4230037AC67 /* FunProject */,
 				F5A44FBE1AD8D4230037AC67 /* FunProjectTests */,
 				F5A44FA31AD8D4230037AC67 /* Products */,
@@ -119,6 +144,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F5A44FCC1AD8D4FA0037AC67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5A44FD11AD8D4FA0037AC67 /* libFunLibrary.a */,
+				F5A44FD31AD8D4FA0037AC67 /* FunLibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +167,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F5A44FD51AD8D50F0037AC67 /* PBXTargetDependency */,
 			);
 			name = FunProject;
 			productName = FunProject;
@@ -186,6 +221,12 @@
 			mainGroup = F5A44F991AD8D4230037AC67;
 			productRefGroup = F5A44FA31AD8D4230037AC67 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F5A44FCC1AD8D4FA0037AC67 /* Products */;
+					ProjectRef = F5A44FCB1AD8D4FA0037AC67 /* FunLibrary.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F5A44FA11AD8D4230037AC67 /* FunProject */,
@@ -193,6 +234,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F5A44FD11AD8D4FA0037AC67 /* libFunLibrary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFunLibrary.a;
+			remoteRef = F5A44FD01AD8D4FA0037AC67 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F5A44FD31AD8D4FA0037AC67 /* FunLibraryTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FunLibraryTests.xctest;
+			remoteRef = F5A44FD21AD8D4FA0037AC67 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F5A44FA01AD8D4230037AC67 /* Resources */ = {
@@ -240,6 +298,11 @@
 			isa = PBXTargetDependency;
 			target = F5A44FA11AD8D4230037AC67 /* FunProject */;
 			targetProxy = F5A44FBC1AD8D4230037AC67 /* PBXContainerItemProxy */;
+		};
+		F5A44FD51AD8D50F0037AC67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FunLibrary;
+			targetProxy = F5A44FD41AD8D50F0037AC67 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -348,6 +411,7 @@
 				INFOPLIST_FILE = FunProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 			};
 			name = Debug;
 		};
@@ -358,6 +422,7 @@
 				INFOPLIST_FILE = FunProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 			};
 			name = Release;
 		};

@@ -1,0 +1,3 @@
+[submodule "Fun-Library"]
+	path = Fun-Library
+	url = https://github.com/espressoft/Fun-Library
