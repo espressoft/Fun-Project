@@ -479,6 +479,7 @@
 				F5A44FC71AD8D4230037AC67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5A44FC81AD8D4230037AC67 /* Build configuration list for PBXNativeTarget "FunProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +488,7 @@
 				F5A44FCA1AD8D4230037AC67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
